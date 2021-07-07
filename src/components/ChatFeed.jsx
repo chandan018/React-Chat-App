@@ -9,7 +9,6 @@ const ChatFeed = (props) => {
 
     const renderMessage = () => {
         const keys = Object.keys(messages);
-
         return keys.map((key, index) => {
             const message = messages[key];
             const lastMessageKey = index === 0 ? null : keys[index - 1];
@@ -26,7 +25,6 @@ const ChatFeed = (props) => {
                     </div>
                     <div className="read-receipts" style={{ marginRight: isMyMessage ? '18px' : '0px', marginLeft: isMyMessage ? '0px' : '68px' }}>
                         read-receipts
-
                     </div>
 
                 </div>

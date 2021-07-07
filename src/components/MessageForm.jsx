@@ -6,7 +6,6 @@ const MessageForm = (props) => {
     const {chatId, creds} = props;
 
     const handleChange = (event) =>{
-        
         setValue(event.target.value);
 
         isTyping(props, chatId);
@@ -14,7 +13,6 @@ const MessageForm = (props) => {
 
     const handleSubmit = (event) => {
         event.preventDefault()
-
         const text = value.trim()
 
         if(text.length > 0 ) sendMessage(creds, chatId, { text })
